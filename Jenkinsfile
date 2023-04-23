@@ -4,7 +4,7 @@ pipeline {
      environment{
        registryCredential = 'ecr:ap-northeast-1:ishanpandey2000'
        appRegistry = "475263483524.dkr.ecr.ap-northeast-1.amazonaws.com/capstoneproject"
-       capstoneRegistry = "https:// 475263483524.dkr.ecr.ap-northeast-1.amazonaws.com"
+       capstoneRegistry = "https://475263483524.dkr.ecr.ap-northeast-1.amazonaws.com"
        cluster = "CapstoneProject"
         service = "capstoneService"
    }
@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone Website') {
             steps {
-                git url:'https://github.com/ishanpandey70/website.git'
+                git url:'https://github.com/ishanpandey70/website'
             }
         }
 
